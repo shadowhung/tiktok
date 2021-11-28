@@ -5,11 +5,11 @@ function get_db_config()
         $url = parse_url(getenv("DATABASE_URL"));
 
         return $db_config = [
-            'connection' => 'pgsql',
-            'host' => $url["host"],
-            'database'  => substr($url["path"], 1),
-            'username'  => $url["user"],
-            'password'  => $url["pass"],
+            'connection' => 'mysql',
+            'host' => '114.55.100.251',
+            'database'  => 'weibo',
+            'username'  => 'weibo',
+            'password'  => '55fe7i7T6BmPFb2b',
         ];
     } else {
         return $db_config = [
